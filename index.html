@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEAR UP !R | Monitore sua mochila de emergencia</title>
+
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+<body>
+    <!-- Contêiner com a imagem da mochila -->
+    <div id="gif-container">
+        <img src="./img/mochila.gif" alt="Ícone" id="gif">
+    </div>
+
+    <!-- Contêiner para adicionar o nome -->
+    <div id="card-container">
+        <h2>Adicionar Nome</h2>
+        <input type="text" id="name-input" placeholder="Digite seu nome">
+        <button id="ok-button" onclick="saveName()">OK</button>
+    </div>
+
+    <!-- Contêiner principal -->
+    <div class="home" id="home">
+        <!-- Barra de navegação -->
+        <div class="navbar">
+            <div class="user">
+                <div class="user-image">
+                    <img class="user-image" src="./img/user.png" alt="Imagem do Usuário">
+                </div>
+            </div>
+            <div class="icon-notification">
+            <a href="./notification.html"><span class="material-symbols-outlined">
+                    notifications
+                </span></a>
+             <div class="alert" id="alert-icon"></div>   
+            </div>
+        </div>
+
+        <!-- Seção de boas-vindas ao usuário -->
+        <div class="welcome-user" id="welcome-user">
+            <h1>Bem vindo <span id="user-name"></span></h1>
+            <p>Antecipar é o segredo do planejamento.</p>
+        </div>
+
+        <!-- Título "Informações" -->
+        <div class="title">
+            <h1>Informações</h1>
+        </div>
+
+        <!-- Contêiner para informações adicionais -->
+        <div class="card-container" id="card-container-info">
+
+        </div>
+
+        <!-- Título "Lista de Itens" -->
+        <div class="title">
+            <h1>Lista de Itens</h1>
+        </div>
+    </div>
+
+    <!-- Contêiner da tabela -->
+    <div class="table" id="table">
+    </div>
+
+    <!-- Botão "Adicionar" -->
+    <button class="add-btn" id="add-btn">
+        <span class="material-symbols-outlined">
+            add
+        </span>
+    </button>
+
+    <!-- Contêiner para adicionar um novo item -->
+    <div class="card-new-item" id="card-new-item">
+        <h1>Novo Item</h1>
+        <form>
+            <!-- Campo "Nome" -->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+
+            <!-- Campo "Validade" -->
+            <label for="validity">Validade:</label>
+            <input type="date" id="validity" name="validity">
+
+            <label for="amount">Quantidade:</label>
+            <!-- Campo "Quantidade" -->
+            <div class="amount-div">
+                <input type="number" id="amount" name="amount">
+                <select name="unit" id="unit">
+                    <option value="Kg">Kg</option>
+                    <option value="Un" selected>Un</option>
+                    <option value="g">g</option>
+                    <option value="ml">ml</option>
+                    <option value="Litros">Litros</option>
+                </select>
+            </div>
+
+            <!-- Botões para adicionar e fechar -->
+            <button type="button" onclick="addItem()">Adicionar</button>
+            <button type="button" id="btn-close">Fechar</button>
+        </form>
+    </div>
+
+
+    <script src="./js/home.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/notification.js"></script>
+
+</body>
+
+</html>
