@@ -1,9 +1,5 @@
 # Gear-up
 
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
-</p>
-
 O projeto Gear Up é um aplicativo em JavaScript que tem como objetivo ajudar os usuários a monitorar os itens em sua mochila de emergência. A mochila de emergência é um kit essencial para situações de emergência, como desastres naturais ou eventos imprevistos, e é importante garantir que todos os itens necessários estejam presentes e em bom estado.
 
 ## Funcionalidades
